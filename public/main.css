@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background: darkblue;
+  font-family: "Roboto", sans-serif;
+  color: #f5f5f5;
+  position: relative;
+}
+.body .pop__up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+}
+.body .pop__up .pop__up-info {
+  height: 60%;
+  width: 40%;
+  background: #00a0f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+.body .pop__up .pop__up-info label {
+  width: 80%;
+}
+.body .pop__up .pop__up-info input {
+  border: none;
+  border-radius: 15px;
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  outline: none;
+}
+.body .pop__up .pop__up-info input:focus {
+  border: none;
+}
+.body .pop__up .pop__up-info #pop__up-btn {
+  width: 60%;
+  height: 55px;
+  border: none;
+  border-radius: 25px;
+  font-size: 22px;
+  background: lightblue;
+  box-shadow: 0 0 10px;
+  transition: 0.5s;
+}
+.body .pop__up .pop__up-info #pop__up-btn:hover {
+  cursor: pointer;
+  background: blue;
+  color: #f5f5f5;
+}
+
+.container {
+  width: 1124px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 120px;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header .nav ul {
+  list-style: none;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 18px;
+}
+.header .nav ul li a i {
+  margin-right: 10px;
+}
+
+.block__1 {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.block__1 img {
+  position: absolute;
+}
+.block__1 .agama__map {
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.block__1 .blue__cards {
+  bottom: -60px;
+  left: 20%;
+  height: 60%;
+}
+.block__1 .block__1-info {
+  position: relative;
+}
+.block__1 .block__1-info .track {
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  left: 370px;
+}
+.block__1 .block__1-info p {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.block__1 .block__1-info #btn {
+  padding: 15px;
+  background: #00a0f9;
+  border: none;
+  font-size: 18px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px;
+  transition: 0.2s;
+}
+.block__1 .block__1-info #btn:hover {
+  box-shadow: none;
+  background: blue;
+  cursor: pointer;
+  color: #f5f5f5;
+}
+
+/*# sourceMappingURL=main.css.map */
