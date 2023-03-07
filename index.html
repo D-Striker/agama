@@ -7,7 +7,7 @@
     <title>Агама</title>
     <link href="public/main.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/172bb186eb.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="/assets/img/favicon.png"/>
+    <link rel="icon" type="image/png" href="./public/img/favicon.png"/>
   </head>
   <body class="body">
     <header class="header">
@@ -22,8 +22,8 @@
 
     <div class="main">
       <div class="block__1">
-        <img class="blue__cards" src="/public/img/blue_cards.png" alt="">
-        <img class="agama__map" src="/public/img/agama_map.png" alt="">
+        <img class="blue__cards" src="./public/img/blue_cards.png" alt="">
+        <img class="agama__map" src="./public/img/agama_map.png" alt="">
         <div class="container">
           <div class="block__1-info">
             <p>
@@ -41,7 +41,40 @@
             <img class="track" src="/public/img/track.png" alt="">
           </div>
         </div>
-        
+      </div>
+
+      <div class="block__2">
+        <div class="container">
+          <div class="about">
+            <h2>Что мы делаем</h2>
+            <div class="about__items">
+              <div class="about__item">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <div class="about__item">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <div class="about__item">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <div class="about__item">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <div class="about__item">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <div class="about__item">
+                <img src="" alt="">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- pop up start -->
@@ -53,18 +86,45 @@
             <input class="name" name="name" type="text" placeholder="Введите ваше имя">
           </label>
           <label>
-            Ваш e-mail:
+            Ваш телефон:
             <input class="phone" name="phone" type="number" placeholder="Введите ваш телефон">
           </label>
           <button type="submit" id="pop__up-btn">Отправить</button>
+          <div class="checkbox">
+            <input  type="checkbox" checked="checked">
+            Подтверждаю согласие с <a href="#">политикой конфиденциальности</a>
+          </div>
+          <div class="close__form">✕</div>
         </div>
       </div>
     </form>
     <!-- pop up end -->
     <footer class="footer">
-
+      <div class="container">
+        <div class="contacts">
+          <h2>Свяжитесь с нами</h2>
+          <div class="contact__items">
+            <div class="contact__item">
+              <i class="fas fa-envelope"></i>
+              <p>sobolev_sa@agama.info</p>
+            </div>
+            <div class="contact__item">
+              <i class="fas fa-mobile-alt"></i>
+              <p>+7 (912) 270 05-99</p>
+            </div>
+            <div class="contact__item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                Екатеринбург, <br>
+                площадь Первой Пятилетки, <br>
+                литер ММММ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script src="/public/js/main.js"></script>
+    <script src="public/js/main.js"></script>
   </body>
 </html>
