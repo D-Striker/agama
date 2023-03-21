@@ -144,7 +144,7 @@ h2 {
 }
 .block__1 .blue__cards {
   bottom: -60px;
-  left: 20%;
+  left: 555px;
   height: 60%;
 }
 .block__1 .block__1-info {
@@ -215,7 +215,7 @@ h2 {
 .block__2 {
   height: 100vh;
   background: rgb(0, 160, 249);
-  background: linear-gradient(-27deg, rgb(0, 160, 249) 50%, rgb(0, 0, 139) 50%);
+  background: linear-gradient(-17deg, rgb(0, 160, 249) 50%, rgb(0, 0, 139) 50%);
 }
 .block__2 .container {
   display: flex;
