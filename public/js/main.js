@@ -5,6 +5,10 @@ const popUp = document.querySelector(".pop__up");
 const form = document.querySelector(".form");
 const close__form = document.querySelector(".close__form");
 const checkbox = document.querySelector(".checkbox input");
+const block5 = document.querySelector('.block5-img');
+const burger__items = document.querySelector('.burger__items');
+const burger = document.querySelector('.burger');
+const body = document.querySelector('.body');
 
 let name = document.querySelector(".name");
 let phone = document.querySelector(".phone");
@@ -17,8 +21,7 @@ popUp.addEventListener("click", (e)=>{
     if(e.target === popUp){
         popUp.style.display = "none";
     }
-
-})
+}) 
 
 popInput.forEach(element => {
     element.addEventListener("click", ()=> {
@@ -64,38 +67,72 @@ form.addEventListener("submit", (e)=>{
 })
 
 
-
 btn.addEventListener("click", ()=> {
     popUp.style.display = "flex";
 })
 
+burger.addEventListener('click', ()=>{
+    burger__items.style.left = '0';
+})
+
+
+if(burger__items.style.left = '0'){
+    document.addEventListener('click', ()=>{
+        burger__items.style.left = "-80%";
+    })
+} 
+
+
+
+
+
 // add slick-slider 
 
-$('.center').slick({
-    centerMode: true,
-    centerPadding: '60px',
+
+$('.slider__items').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            marginLeft: 0,
+          }
         }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+      ]
+});
+
+// zoom map in hover 
+
+block5.addEventListener('mouseover', ()=> {
+    block5.style.maxWidth = '250%'
+    if(window.screen.width <= 420) {
+        block5.style.maxWidth = '120%' 
+    }
+});
+
+block5.addEventListener('mouseout', ()=> {
+    block5.style.maxWidth = '80%'
+});
+
+
