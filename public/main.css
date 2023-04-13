@@ -358,7 +358,7 @@ h2 {
 }
 
 .header .nav__mobile .burger__items {
-  position: absolute;
+  position: fixed;
   transition: 0.3s;
   top: 0;
   left: -80%;
@@ -396,6 +396,11 @@ h2 {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 420px) {
+  .header .nav__mobile {
+    display: none;
+  }
+}
 @media screen and (max-width: 420px) {
   .header .nav {
     display: none;
@@ -445,6 +450,9 @@ h2 {
   .footer .container .contacts .contact__items .contact__item {
     align-items: flex-start;
     width: 100%;
+  }
+  .block__1 .block__1-info .track {
+    display: none;
   }
 }
 
