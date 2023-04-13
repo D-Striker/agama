@@ -9,6 +9,7 @@ const block5 = document.querySelector('.block5-img');
 const burger__items = document.querySelector('.burger__items');
 const burger = document.querySelector('.burger');
 const body = document.querySelector('.body');
+const close__submenu = document.querySelector('.close__submenu');
 
 let name = document.querySelector(".name");
 let phone = document.querySelector(".phone");
@@ -76,11 +77,11 @@ burger.addEventListener('click', ()=>{
 })
 
 
-if(burger__items.style.left = '0'){
-    document.addEventListener('click', ()=>{
-        burger__items.style.left = "-80%";
-    })
-} 
+
+close__submenu.addEventListener('click', ()=>{
+    burger__items.style.left = "-80%";
+})
+
 
 
 

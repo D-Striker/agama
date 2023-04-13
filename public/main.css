@@ -332,6 +332,70 @@ h2 {
   margin-left: 70px;
 }
 
+.header .nav__mobile .close__submenu {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav__mobile .close__submenu span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #f5f5f5;
+  margin: 0 auto;
+  position: absolute;
+}
+.header .nav__mobile .close__submenu span:nth-child(1) {
+  transform: rotate(-45deg);
+}
+.header .nav__mobile .close__submenu span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.header .nav__mobile .burger__items {
+  position: absolute;
+  transition: 0.3s;
+  top: 0;
+  left: -80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999999;
+}
+.header .nav__mobile .burger__items img {
+  width: 70%;
+}
+.header .nav__mobile .burger__items .contacts {
+  list-style: none;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav__mobile .burger__items .contacts li {
+  width: 100%;
+  text-align: center;
+}
+.header .nav__mobile .burger__items .contacts li a {
+  width: 100%;
+  color: #f5f5f5;
+  font-size: 22px;
+  text-decoration: none;
+}
+.header .nav__mobile .burger__items .contacts li a i {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 420px) {
   .header .nav {
     display: none;
@@ -381,43 +445,6 @@ h2 {
   .footer .container .contacts .contact__items .contact__item {
     align-items: flex-start;
     width: 100%;
-  }
-  .header .nav__mobile .burger__items {
-    position: absolute;
-    top: 0;
-    left: -80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 999999;
-  }
-  .header .nav__mobile .burger__items img {
-    width: 70%;
-  }
-  .header .nav__mobile .burger__items .contacts {
-    list-style: none;
-    height: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header .nav__mobile .burger__items .contacts li {
-    width: 100%;
-    text-align: center;
-  }
-  .header .nav__mobile .burger__items .contacts li a {
-    width: 100%;
-    color: #f5f5f5;
-    font-size: 22px;
-    text-decoration: none;
-  }
-  .header .nav__mobile .burger__items .contacts li a i {
-    margin-right: 10px;
   }
 }
 
